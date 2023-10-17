@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat n Dog</title>
+    <style>
+      main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #ccc;
+      }
+      .image::before {
+        width: 325px;
+        height: 240px;
+        content: "";
+        position: absolute;
+        background-color: hsla(277, 60%, 47%, 0.6);
+        border-radius: 12px 12px 0 0;
+      }
+      /* image */
+      .image img {
+        width: 325px;
+        height: 240px;
+        border-radius: 12px 12px 0 0;
+        opacity: 0.5;
+
+        filter: grayscale(100%);
+      }
+      /* adding color filter to image */
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <picture class="image">
+        <source
+          media="(min-width: 400px)"
+          srcset="dog-pexels-photo-16623474.webp"
+        />
+        <img src="cat-pexels-photo-1170986.webp" />
+      </picture>
+    </main>
+  </body>
+</html>
