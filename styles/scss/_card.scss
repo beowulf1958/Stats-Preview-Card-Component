@@ -1,0 +1,49 @@
+/* adding color filter to image */
+.card__image::before {
+    width: 375px;
+    height: 240px;
+    content: "";
+    position: absolute;
+    background-color: var(--overlay);
+    border-radius: 12px 12px 0 0;
+  }
+  
+  /* image */
+  .card__image img {
+    width: 375px;
+    height: 240px;
+    border-radius: 12px 12px 0 0;
+    opacity: 0.6;
+  }
+  .card {
+    background-color: var(--card-bg);
+    width: 20rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .card__content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+  }
+  .card__content p {
+    color: var(--faded);
+    font-size: var(--fs-400);
+  }
+  .card__stats {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }  
+  .stat p {
+    color: var(--faded);
+  } 

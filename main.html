@@ -16,6 +16,14 @@
   <body>
     <main>
       <section class="card">
+        <picture class="card__image">
+          <source
+            media="(min-width: 400px)"
+            srcset="images/image-header-desktop.jpg"
+          />
+          <img src="images/image-header-mobile.jpg" />
+        </picture>
+
         <div class="card__content">
           <h1>
             Get <span class="accent">insights</span> that help your business
@@ -40,8 +48,7 @@
             </div>
           </div>
         </div>
-
-        <picture class="card__image"></picture>
+        <!-- End Card Content -->
       </section>
     </main>
   </body>
