@@ -4,8 +4,8 @@
     --card-bg: hsl(244, 38%, 16%);
     --white: hsl(0, 0%, 100%);
     --accent: hsl(277, 64%, 61%);
-    --fs-400: 0.9375rem;
-    --fs-700: 2.5rem
+    --fw-400: 0.9375rem;
+    --fw-700: 2.5rem;
     --ff-main: "Inter", sans-serif;
     --ff-stats: "Lexend Deca", sans-serif;
   }
