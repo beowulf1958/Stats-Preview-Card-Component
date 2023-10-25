@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GradientWave - A Stylish Landing Page"</title>
+    <link rel="stylesheet" href="#" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: 0px;
+      }
+      .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        font-family: "Hanken Grotesk";
+      }
+      .card1 {
+        width: 90%;
+      }
+      .card2 {
+        width: 100%;
+        height: 45vh;
+
+        background-color: rgba(73, 54, 242, 255);
+
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        text-align: center;
+        color: white;
+      }
+      .circle {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: linear-gradient(
+          to bottom,
+          hsla(256, 72%, 46%, 1),
+          hsla(241, 72%, 46%, 0)
+        );
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .pad {
+        margin-top: 15px;
+      }
+      .padtext {
+        font-weight: 700;
+        font-size: large;
+      }
+      .padtext1 {
+        font-weight: 800;
+        font-size: x-large;
+      }
+      .padtext2 {
+        font-weight: 500;
+        font-size: small;
+      }
+      .heading {
+        font-size: 52px;
+      }
+      .cont {
+        margin-left: 24px;
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+      }
+      .summ {
+        font-size: larger;
+        font-weight: 700;
+        height: 40px;
+      }
+      .same {
+        display: flex;
+        align-items: center;
+
+        text-align: center;
+        font-size: medium;
+
+        width: 42vh;
+        height: 6vh;
+        border-radius: 10px;
+      }
+      .inside1 {
+        color: hsl(39, 100%, 56%);
+        background-color: rgba(255, 251, 242, 255);
+        margin-top: 14px;
+      }
+      .inside2 {
+        color: hsl(166, 100%, 37%);
+        background-color: rgba(242, 251, 250, 255);
+        margin-top: 14px;
+      }
+      .inside3 {
+        color: hsl(234, 85%, 45%);
+        background-color: rgba(243, 243, 253, 255);
+        margin-top: 14px;
+      }
+      .svg {
+        margin: 5px;
+      }
+      .black {
+        color: black;
+        margin-left: 4px;
+      }
+      .gray {
+        color: hsl(224, 11%, 49%);
+      }
+      button {
+        margin-top: 34px;
+        margin-bottom: 20px;
+        background-color: rgba(48, 59, 89, 255);
+        height: 52px;
+        width: 311px;
+        border-radius: 34px;
+        color: white;
+        font-size: medium;
+      }
+      /*                 */
+      /* Desktop Version */
+      /*                 */
+      @media (min-width: 1024px) {
+        .card {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          height: 100vh;
+        }
+        .card1 {
+          width: 650px;
+          height: 386px;
+          background-color: hsl(0, 0%, 100%);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          transition: 0.3s;
+          border-radius: 20px;
+          display: flex;
+        }
+        .card2 {
+          width: 50%;
+          height: 386px;
+
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+          transition: 0.3s;
+
+          border-radius: 20px;
+        }
+
+        .pad {
+          margin-top: 20px;
+        }
+        .para {
+          width: 200px;
+          margin-bottom: 20px;
+        }
+
+        .cont {
+          width: 15rem;
+          margin-left: 20px;
+        }
+
+        .same {
+          width: 300px;
+          border-radius: 6px;
+        }
+        .inside {
+          color: hsla(0, 100%, 67%);
+          background-color: rgba(255, 246, 245, 255);
+          margin-top: 7px;
+        }
+
+        .black {
+          margin-left: 20px;
+        }
+
+        button {
+          height: 40px;
+          width: 220px;
+          margin-left: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card1">
+        <div class="card2">
+          <p class="pad padtext">Your Result</p>
+          <div class="circle pad">
+            <h1 class="heading">76</h1>
+            <p>of 100</p>
+          </div>
+          <p class="pad padtext1">Great</p>
+          <p class="pad para padtext2">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+        <!-- End Card2 -->
+        <div class="cont">
+          <p class="summ">Summary</p>
+          <div class="inside same">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              viewBox="0 0 20 20"
+              class="svg"
+            >
+              <path
+                stroke="#F55"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.25"
+                d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z"
+              />
+            </svg>
+            <pre><p>Reaction         <span class="black">80</span><span class="gray">/100</span></p></pre>
+          </div>
+          <div class="inside1 same">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              viewBox="0 0 20 20"
+              class="svg"
+            >
+              <path
+                stroke="#FFB21E"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.25"
+                d="M5.833 11.667a2.5 2.5 0 1 0 .834 4.858"
+              />
+              <path
+                stroke="#FFB21E"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.25"
+                d="M3.553 13.004a3.333 3.333 0 0 1-.728-5.53m.025-.067a2.083 2.083 0 0 1 2.983-2.824m.199.054A2.083 2.083 0 1 1 10 3.75v12.917a1.667 1.667 0 0 1-3.333 0M10 5.833a2.5 2.5 0 0 0 2.5 2.5m1.667 3.334a2.5 2.5 0 1 1-.834 4.858"
+              />
+              <path
+                stroke="#FFB21E"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.25"
+                d="M16.447 13.004a3.334 3.334 0 0 0 .728-5.53m-.025-.067a2.083 2.083 0 0 0-2.983-2.824M10 3.75a2.085 2.085 0 0 1 2.538-2.033 2.084 2.084 0 0 1 1.43 2.92m-.635 12.03a1.667 1.667 0 0 1-3.333 0"
+              />
+            </svg>
+            <pre><p>Memory           <span class="black">92</span><span class="gray">/100</span></p></pre>
+          </div>
+          <div class="inside2 same">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              viewBox="0 0 20 20"
+              class="svg"
+            >
+              <path
+                stroke="#00BB8F"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.25"
+                d="M7.5 10h5M10 18.333A8.333 8.333 0 1 0 1.667 10c0 1.518.406 2.942 1.115 4.167l-.699 3.75 3.75-.699A8.295 8.295 0 0 0 10 18.333Z"
+              />
+            </svg>
+            <pre><p>Verbal           <span class="black">61</span><span class="gray">/100</span></p></pre>
+          </div>
+          <div class="inside3 same">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              viewBox="0 0 20 20"
+              class="svg"
+            >
+              <path
+                stroke="#1125D6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.25"
+                d="M10 11.667a1.667 1.667 0 1 0 0-3.334 1.667 1.667 0 0 0 0 3.334Z"
+              />
+              <path
+                stroke="#1125D6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.25"
+                d="M17.5 10c-1.574 2.492-4.402 5-7.5 5s-5.926-2.508-7.5-5C4.416 7.632 6.66 5 10 5s5.584 2.632 7.5 5Z"
+              />
+            </svg>
+            <pre><p>Visible          <span class="black">72</span><span class="gray">/100</span></p></pre>
+          </div>
+          <button type="button">Continue</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
